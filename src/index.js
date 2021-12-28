@@ -17,8 +17,9 @@
 // reportWebVitals();
 
 // =============================================================================================
-import React from 'react';
+// import React from 'react';
 import ReactDom from 'react-dom';
+import App from './App'
 
 // const element = React.createElement('div', {
 //    a: 5,
@@ -27,11 +28,14 @@ import ReactDom from 'react-dom';
 // console.log(element);
 // ReactDom.render(element, document.querySelector('#root'));
 
-const elem1 = <span>Привіт</span>
-const elem2 = <span>мір</span>
+// const elem1 = <span>Привіт</span>
+// const elem2 = <span>мір</span>
 
-const jsxElementt =( <div>
-   {elem1 }
-   { elem2}
-</div>)
-console.log(jsxElementt);
+// const jsxElementt =( <div>
+//    {elem1 }
+//    { elem2}
+// </div>)
+// console.log(jsxElementt);
+
+ReactDom.render(<App />, document.querySelector('#root'))
+
