@@ -1,21 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 import user from './user.json'
-import Profile from './components/Profile'
-console.log(user.avatar)
+import friends from './friends.json';
+// import Profile from './components/Profile'
+import ProfileList from './components/ProfileList';
+import Section from './components/Section';
+import FriendList from './components/FriendList';
 
-export default function App() {
+
+ function App() {
+
+
   return (
+   <div>
+   
+      <Section title='Акція дня'>
+         <ProfileList items={user} />
+        </Section>
+        
+        <FriendList items={friends}/>
+      
+   </div>
+   
 
-      <Profile
-  name={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
-/>
    
   )
 }
 
-// export default App;
+export default App;
