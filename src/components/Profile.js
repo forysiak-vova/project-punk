@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
     <img
       src={avatar}
                alt={tag}
-               width={280}
+               width={150}
       className="avatar"
     />
             <p className="name">{name}</p>
